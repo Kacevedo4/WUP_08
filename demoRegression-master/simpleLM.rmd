@@ -75,5 +75,4 @@ AGE:         0.5073.
 
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
-
-Based on the Adjusted-Rsquared, HEADLEN is the best variable to preidct LENGTH
+According to the Adjusted-RSquared, HEADLEN is the best variable to predict LENGTH.
