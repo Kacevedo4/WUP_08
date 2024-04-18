@@ -42,6 +42,7 @@ abline(simpAGE)
 summary.lm(simpAGE)
 ```
 
+
 ```{r}
 simpHEADWTH <- lm(LENGTH~HEADWTH, data=bears)
 plot(LENGTH~HEADWTH, data=bears)
@@ -64,7 +65,7 @@ summary.lm(simpWEIGHT)
 ```
 
 
-Best to Worst based on Adjusted-RSquared.   
+Best to Worst based on Adjusted-RSquared:   
 
 HEADLEN:  0.8434.   
 CHEST:   0.7869.   
