@@ -28,5 +28,51 @@ summary.lm(simp)
 ```
 
 
+```{r}
+simpHEADLEN <-lm(LENGTH~HEADLEN, data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simpHEADLEN)
+summary.lm(simpHEADLEN)
+```
+
+```{r}
+simpAGE <- lm(LENGTH~AGE, data=bears)
+plot(LENGTH~AGE, data=bears)
+abline(simpAGE)
+summary.lm(simpAGE)
+```
+
+```{r}
+simpHEADWTH <- lm(LENGTH~HEADWTH, data=bears)
+plot(LENGTH~HEADWTH, data=bears)
+abline(simpHEADWTH)
+summary.lm(simpHEADWTH)
+```
+
+```{r}
+simpCHEST <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simpCHEST)
+summary.lm(simpCHEST)
+```
+
+```{r}
+simpWEIGHT <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simpWEIGHT)
+summary.lm(simpWEIGHT)
+```
+
+
+Best to Worst based on Adjusted-Rsquared.   
+HEADLEN 0.8434.   
+CHEST 0.7869.   
+NECK 0.7476.   
+WEIGHT 0.7423.   
+HEADWTH 0.5321.   
+AGE 0.5073.   
+
+
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
+Based on the Adjusted-Rsquared, HEADLEN is the best variable to preidct LENGTH
